@@ -1,0 +1,6 @@
+1d:
+
+Odwonie do atrybutw w selektorze:
+div[data-name] {}
+a[href="https://stromna.pl"]{}
+[tittle]{}
