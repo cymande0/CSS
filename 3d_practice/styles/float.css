@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.board {
+    width: 30vw;
+    height: 30vw;
+    border: 10px solid black;
+    margin: 25vh auto 3vh auto;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+span {
+    float: left;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+span:nth-of-type(2) {
+    background-color: white;
+}
+
+span:nth-of-type(3) {
+    background-color: white;
+}
