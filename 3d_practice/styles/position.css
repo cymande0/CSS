@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    position: absolute;
+    height: 50vw;
+    width: 50%;
+    left: calc(50% - 25%);
+    top: calc(50% - 25vw);
+    border: 10px solid black;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 85vh;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+span:nth-last-child(1) {
+    top: 50%;
+    left: 50%;
+}
