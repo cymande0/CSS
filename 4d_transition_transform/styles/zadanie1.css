@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #777;
+    transition: 1s;
+}
+
+div.circle {
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    margin: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div.red {
+    background-color: red;
+    left: 0;
+    top: 0;
+}
+
+div.green {
+    background-color: green;
+    right: 0;
+    top: 0;
+}
+
+div.blue {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+}
+
+div.orange {
+    background-color: orange;
+    right: 0;
+    bottom: 0;
+}
+
+.bg p {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 100vh;
+    text-align: center;
+    width: 100%;
+    display: none;
+    transition: 1s;
+}
+
+div.red:hover~div.bg {
+    background-color: red;
+}
+
+div.green:hover~div.bg {
+    background-color: green;
+}
+
+div.blue:hover~div.bg {
+    background-color: blue;
+}
+
+div.orange:hover~div.bg {
+    background-color: orange;
+}
+
+div.red:hover~div.bg p.red,
+div.blue:hover~div.bg p.blue,
+div.green:hover~div.bg p.green,
+div.orange:hover~div.bg p.orange {
+    display: block;
+}
