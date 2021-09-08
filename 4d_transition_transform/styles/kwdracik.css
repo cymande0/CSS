@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    background-color: #fff;
+    border: 3px black solid;
+    left: calc(50% - 90px);
+    top: 17vh;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+div.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    /* transition: .3s linear; */
+    transition: left .5s, top .5s .5s, width 1s, height 1s;
+}
+
+button:hover+div.square {
+    width: 70px;
+    height: 70px;
+    top: calc(100vh - 70px);
+    left: calc(100vw - 70px);
+}
