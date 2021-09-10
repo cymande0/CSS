@@ -18,6 +18,7 @@ button {
 }
 
 button:hover {
+    /* background-color: black; */
     background-color: black;
     color: white;
 }
@@ -30,10 +31,10 @@ div.square {
     height: 14px;
     background-color: black;
     /* transition: .3s linear; */
-    transition: left .5s, top .5s .5s, width 1s, height 1s;
+    transition: left .5s, top .5s .5s, width .5s, height .5s;
 }
 
-button:hover+div.square {
+button:hover~div.square {
     width: 70px;
     height: 70px;
     top: calc(100vh - 70px);
