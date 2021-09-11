@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+span {
+    position: absolute;
+    left: 10vw;
+    top: 5vw;
+    display: inline-block;
+    width: 10vw;
+    height: 4vw;
+    font-size: 20px;
+    line-height: 4vw;
+    text-align: center;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+div.bricks {
+    position: absolute;
+    bottom: -400px;
+    left: -600px;
+    height: 400px;
+    width: 600px;
+    background-color: rgb(150, 15, 15);
+    transition: 0.3s;
+    /* opacity: 0; */
+}
+
+div.chimney {
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    background-color: #444;
+    bottom: -80px;
+    left: -60px;
+    transition: 0.8s;
+}
+
+div.leftWindow {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: -80px;
+    left: -80px;
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+div.rightWindow {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: -80px;
+    left: -80px;
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+div.door {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    bottom: -150px;
+    left: -100px;
+    background-color: rgb(29, 12, 12);
+    transition: 0.7s;
+}
+
+div.roof {
+    position: absolute;
+    height: 424px;
+    width: 424px;
+    bottom: -450px;
+    left: -450px;
+    background-color: rgb(29, 12, 12);
+    transform: rotate(45deg);
+    transition: 0.6s;
+}
+
+
+span:hover~div.bricks {
+    left: 400px;
+    bottom: 100px;
+}
+
+span:hover~div.leftWindow {
+    left: 500px;
+    bottom: 290px;
+}
+
+span:hover~div.rightWindow {
+    left: 800px;
+    bottom: 290px;
+}
+
+span:hover~div.door {
+    left: 650px;
+    bottom: 100px;
+}
+
+span:hover~div.roof {
+    bottom: 288px;
+    left: 488px;
+}
+
+span:hover~div.chimney {
+    bottom: 630px;
+    left: 810px;
+}
