@@ -29,7 +29,6 @@ div.bricks {
     width: 600px;
     background-color: rgb(150, 15, 15);
     transition: 0.3s;
-    /* opacity: 0; */
 }
 
 div.chimney {
@@ -107,6 +106,7 @@ span:hover~div.door {
 span:hover~div.roof {
     bottom: 288px;
     left: 488px;
+    /* transform: translate(45deg); */
 }
 
 span:hover~div.chimney {

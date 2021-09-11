@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --sizeReact: 200px;
+}
+
+body {
+    width: 100vw;
+    font-size: 0;
+}
+
+label {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+div.check {
+    display: inline-block;
+    width: 25%;
+}
+
+div.element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    width: var(--sizeReact);
+    height: var(--sizeReact);
+    transition: .3s;
+}
+
+#size:checked~div.element {
+    width: calc(2 * var(--sizeReact));
+    height: calc(2 * var(--sizeReact));
+}
+
+#rotate:checked~div.element {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#glow:checked~div.element {
+    box-shadow: 0 0 16px 2px yellow;
+}
+
+#color:checked~div.element {
+    background-color: black;
+}
