@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --textSize: 80px;
+        }
+
+        button {
+            font-size: 40px;
+        }
+
+        h1 {
+            position: absolute;
+            margin: 0;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+            font-family: arial;
+            font-size: var(--textSize);
+            transition: .4s;
+        }
+
+        h1.increase {
+            font-size: 160px;
+        }
+
+        h1.decrease {
+            font-size: 40px;
+        }
+
+        h1.addBorder {
+            border: 4px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>$('.larger').click(function () {
+            $('h1').toggleClass("increase")
+        })</script>
+
+    <script>$('.smaller').click(function () {
+            $('h1').toggleClass("decrease")
+        })</script>
+
+    <script>$('.border').click(function () {
+            $('h1').toggleClass('addBorder')
+        })</script>
+
+</body>
+
+</html>
