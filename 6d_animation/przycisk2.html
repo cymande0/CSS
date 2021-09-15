@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Przycisk</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
         button {
             position: absolute;
             bottom: 15vh;
             right: 15vw;
             border: 2px solid black;
-            width: 360px;
+            width: 360;
             height: 100px;
             background-color: #fff;
             font-size: 40px;
@@ -32,32 +27,18 @@
             display: block;
             line-height: 100px;
             position: relative;
-            transition: .3s linear;
             top: 0;
-            left: 0;
+            transition: .3s;
         }
 
-        /* button span:nth-child(1) {
-            left: 0;
-        } */
-
-        button:hover span:nth-child(1) {
-            left: -360px;
-        }
-
-        button:hover span:nth-child(2) {
-            left: 0;
-        }
-
-        button span:nth-child(2) {
+        button:hover span {
             top: -100px;
-            left: 360px;
         }
     </style>
 </head>
 
 <body>
-    <button><span>Kup teraz</span><span>Super Okazja</span></button>
+    <button><span>Kup teraz</span><span>Super okazja!</span></button>
 </body>
 
 </html>
