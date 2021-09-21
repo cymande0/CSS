@@ -9,8 +9,8 @@
     <style>
         section {
             display: flex;
-            flex-direction: row;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-end;
             /* width: 600px; */
             height: 400px;
             margin: 100px auto;
@@ -22,13 +22,13 @@
         }
 
         div {
-            /* flex-basis: 400px; */
+            flex-basis: 400px;
             /* 600px - potrzebują 3 a mają 300 */
-            flex-shrink: 1;
+            /* flex-shrink: 1; */
         }
 
         .f1 {
-            flex-basis: 200px;
+            /* flex-basis: auto; */
             /* width: 1500px; */
             order: 3;
             /* Gdy order jest taki sam decyduje kolejność z html */
@@ -38,7 +38,7 @@
             /* Elementy zmniejszą się tak by nie wykraczać poza wielkość kontenera */
             /* flex-basis: auto; */
             /* auto - tyle ile zostało wskazane we własciwości width/height lub jeśli nie zostało to tyle ile ma wysokości/szerokości dany element */
-            align-self: stretch;
+            /* align-self: stretch; */
             /* auto - to samo co align-items */
             background-color: darkcyan;
             text-align: center;
@@ -46,7 +46,7 @@
         }
 
         .f2 {
-            order: 2;
+            order: 3;
             background-color: darkred;
             /* flex-shrink: 3; */
             /* flex-grow: 0; */
