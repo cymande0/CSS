@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szachownica Grid</title>
+
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+            /* grid-template-rows: repeat(5, 200px); */
+            grid-template-rows: repeat(5, 1fr);
+            width: 60vw;
+            height: 60vw;
+            background-color: #ddd;
+
+            /* Wycentrowanie - 3 spopsoby*/
+
+            /* 1: */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+
+            /* 2: */
+            /* position: absolute;
+            top: calc(50% - calc(30vw));
+            left: calc(50% - calc(30vw)); */
+
+            /* 3: */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -30vw;
+            margin-top: -30vw;
+        }
+
+        div {
+            background-color: white
+        }
+
+        div:nth-child(even) {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>
