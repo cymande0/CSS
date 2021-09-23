@@ -27,7 +27,7 @@ const paragraph = document.querySelector('p');
 
 
 let clickNumbers = 0;
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function() {
     clickNumbers += 1;
     console.log("Click number: ", clickNumbers);
 })
