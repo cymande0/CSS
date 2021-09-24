@@ -5,4 +5,55 @@ div[data-name] {}
 a[href="https://stromna.pl"]{}
 [tittle]{}
 
-Test
+background-size: auto auto; miej rozmiar jaki masz
+background-size: 200px auto; zmien proporcje. Auto dopasowuje rozmiar do 200px;
+bgs: 100% 100%; 100% rodzica
+
+
+4d:
+transition: 1s;
+transition: all 1s;
+transition: font-size 1s;
+transition-duration: .5s; 
+ease - zacznij wolno, na koncu zwolnij;
+linear - ta sama predkosc podczas calej animacji
+ease-in: zacznij wolno i przyspiesaj
+ease-out - zacznij szybko i zwalniaj
+transition: all 0.5s ease .2s; <-wszystkie elementy, ma to trwac 0.5s, 
+zwalnia-przyspiesaj-zwalnia, opoznij efekt o 2sek.
+transition color 1s ease, font-size 1s s linear, top 1s ease;
+
+Co warto animowac?
+kolory: bgc, color, opacity;
+wielkosci: width/height;
+pozycja: top/bottom/left/right
+elementy modenu pudelkowego: padding, border, maring;
+transformacje: m.in. roate, scale, translate;
+inne: cienie;
+
+transform: rotate(20deg);
+scale (2) <- powiekszenie elementu o 2 razy
+scale(1,2) <- os X o 1, os Y o 2;
+transormX, transformY
+skew
+translate
+
+8d: 
+Flexbox
+
+Rodzic:
+flex-direction -> kierunek osi (row/column)
+flex-wrap 
+align-items: -> odwrotne do osi
+align-content
+justify-content -> rownie osi
+
+Dzieci:
+flex-grow
+flex-shrink
+flex-basis
+align-self 
+order
+
+10d - JS:
+let i const nowe wersje deklarowania zmiennych

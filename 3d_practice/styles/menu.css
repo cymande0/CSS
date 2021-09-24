@@ -103,7 +103,9 @@ nav.mobile {
 
     header {
         width: 100%;
+        filter: ;
     }
+
 
     nav.mobile a {
         display: block;

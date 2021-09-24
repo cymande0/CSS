@@ -10,7 +10,6 @@ html {
 
 body {
     width: 100vw;
-    font-size: 0;
 }
 
 label {
@@ -22,11 +21,6 @@ input {
     width: 40px;
     height: 40px;
     margin-right: 20px;
-}
-
-div.check {
-    display: inline-block;
-    width: 25%;
 }
 
 div.element {
