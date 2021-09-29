@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+        .burger {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            font-family: arial;
+            border-radius: 50%;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 50px;
+            transition: .3s linear;
+        }
+
+        .burger:hover {
+            cursor: pointer;
+            transform: rotate(405deg);
+        }
+
+        aside {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -300px;
+            width: 300px;
+            background-color: black;
+            transition: .5s;
+        }
+
+        .burger:hover+aside {
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="burger">+</div>
+    <aside>
+        <nav></nav>
+    </aside>
+
+    <script src="hamburger.js"></script>
+</body>
+
+</html>
