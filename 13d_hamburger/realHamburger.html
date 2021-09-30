@@ -10,6 +10,15 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <style>
+        .wrapper {
+            margin: 10px 80px;
+            transition: .3s linear;
+        }
+
+        .wrapper.show {
+            padding-left: 300px;
+        }
+
         .burger {
             position: absolute;
             top: 40px;
@@ -49,16 +58,33 @@
 </head>
 
 <body>
-
+    <div class="wrapper active">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore et assumenda, consequuntur similique ipsum
+            unde repellat, harum quod provident voluptas eaque molestiae recusandae. Obcaecati, tempora velit sapiente
+            beatae sint ipsam.
+            Numquam totam earum facilis hic accusantium, eveniet corporis odit molestiae obcaecati. Repellendus, quasi
+            voluptatem tenetur adipisci neque quos fugiat. Itaque aperiam autem explicabo similique obcaecati eius
+            quibusdam sit ut odio?
+            Nihil voluptates dolores assumenda similique officiis hic quis fuga totam impedit aperiam. Ut unde eveniet
+            ullam dolor veritatis, suscipit, nobis iste autem voluptate blanditiis temporibus ratione voluptatem quia
+            obcaecati quibusdam.
+            Sunt rerum ex aut est praesentium, voluptate consectetur omnis blanditiis qui optio? Eveniet modi quod
+            quibusdam, maxime iure pariatur velit sint officiis nemo consectetur. Suscipit, nostrum fuga. Quam, numquam
+            provident?
+            Debitis ut, libero sunt doloremque soluta atque ullam voluptatem enim esse quibusdam delectus neque
+            inventore doloribus, nobis dolores alias? Fugiat id hic iste consequatur, qui recusandae ad cumque tempora
+            in?</p>
+    </div>
     <div class="burger">
-        <i class="fas fa-bars show"></i>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-bars show active"></i>
+        <i class="fas fa-times active"></i>
     </div>
 
-    <aside>
+    <aside class="active">
         <nav></nav>
     </aside>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="realHamburger.js"></script>
 </body>
 
