@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            height: 150vh;
+        }
+
+        article {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .arrow {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            font-size: 40px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 2px black solid;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            transition: .4s linear;
+        }
+
+        .arrow.on {
+            bottom: 350px;
+            transform: rotate(180deg)
+        }
+
+        nav {
+            position: fixed;
+            height: 300px;
+            width: 100%;
+            background-color: black;
+            bottom: -270px;
+            transition: .4s linear;
+        }
+
+        nav.on {
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <div class="arrow"><i class="fas fa-arrow-up"></i></div>
+        <nav></nav>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus consectetur dicta obcaecati ab
+                architecto animi ducimus a, quae illo qui ad quasi iure ipsa distinctio quis voluptate minima
+                blanditiis. Autem, ipsum suscipit error laudantium nihil veritatis officiis necessitatibus tempora
+                laboriosam, sunt eos tempore a ipsam, dolorem eum eaque distinctio enim earum explicabo soluta quas?
+                Distinctio iste nemo nisi accusantium quam a illo molestiae vitae similique doloremque laudantium
+                quibusdam atque, porro neque minus assumenda laborum velit. Totam autem quis necessitatibus, quaerat
+                iure quo consequuntur fugit magnam molestiae modi ab minus sequi officia rerum excepturi? Nam tempore
+                veritatis sit mollitia odit error aspernatur deleniti ipsum fugit nemo necessitatibus veniam obcaecati
+                at, eum amet tenetur assumenda facilis. Earum ut expedita, rem perspiciatis error nostrum officiis? Fuga
+                rem sapiente maxime reprehenderit quas quos impedit nemo enim officiis hic labore delectus odio, quae,
+                corrupti ab sit quia provident error obcaecati ducimus recusandae, itaque porro eveniet? Molestiae
+                impedit doloremque qui earum perspiciatis incidunt in commodi reiciendis consequatur fuga facere,
+                accusantium totam quae repellendus suscipit, sequi reprehenderit delectus sapiente nemo excepturi.
+                Architecto tenetur dolore vel ipsum, eius nesciunt consectetur dolor deserunt sed, amet dolores nulla
+                facere officia porro adipisci perspiciatis placeat rem impedit laboriosam similique temporibus. Optio.
+            </p>
+        </article>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="zadanie.js"></script>
+</body>
+
+</html>
