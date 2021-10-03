@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .article {
+            text-align: center;
+            margin: 5vh 20vw;
+            font-size: 20px;
+            font-family: arial;
+            min-height: 200vh;
+        }
+
+        button {
+            width: 140px;
+            height: 50px;
+            margin: 20px;
+        }
+
+        img {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+
+        .article.blur {
+            filter: blur(2px);
+        }
+
+        .modal-wrap {
+            display: none;
+        }
+
+        .modal-wrap.active {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .modal-wrap.active .modal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 70%;
+            /* background-color: black; */
+            border: 2px solid black
+        }
+
+        @media (max-width: 800px) {
+            .modal {
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+        .modal .top {
+            flex-basis: 15%;
+            background-color: cadetblue;
+        }
+
+        .modal .middle {
+            flex-grow: 1;
+            background-color: #ccc;
+        }
+
+        .modal .bottom {
+            flex-basis: 15%;
+            background-color: cadetblue;
+        }
+
+        span.hide {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-family: arial;
+            font-size: 30px;
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="article">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos asperiores facilis id consequatur maxime at
+            perferendis, voluptates repellat adipisci nihil error molestiae voluptatum quis officiis aperiam hic
+            accusamus perspiciatis voluptate unde totam cum ipsum accusantium odio quia? Odit iusto saepe nemo mollitia
+            consectetur neque cumque soluta blanditiis dolorum voluptas, perspiciatis error, officiis rem exercitationem
+            ad est incidunt, odio maiores placeat sunt! Officiis fugiat commodi labore repudiandae ducimus corporis sint
+            mollitia, dolor modi! Officiis, possimus non molestiae quod in porro nostrum hic dolorum quaerat quam
+            incidunt tenetur eos! Earum, dolorum? Eligendi nesciunt in nisi quidem accusamus praesentium neque aut,
+            assumenda corporis.</p>
+        <button>Kup teraz</button>
+        <img src="img/image640.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sed, modi ex hic est rem perspiciatis veritatis
+            eaque, laborum tempora nihil, atque earum fugiat similique odio voluptatibus veniam vitae quasi fugit
+            voluptates libero? Veniam atque laboriosam est vel molestiae non esse error, sunt ea, vitae sequi doloremque
+            voluptatum officiis nesciunt!</p>
+    </section>
+    <secion class="modal-wrap">
+        <div class="modal">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+            <span class="hide">X</span>
+        </div>
+    </secion>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
