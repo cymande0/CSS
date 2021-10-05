@@ -38,3 +38,6 @@ $("nav a").on("click", function() {
       scrollTop: $(goToSection).offset().top
    })
 })
+
+// $('[data-section="me"')
+
