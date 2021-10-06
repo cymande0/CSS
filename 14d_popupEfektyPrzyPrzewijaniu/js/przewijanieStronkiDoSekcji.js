@@ -40,4 +40,3 @@ $("nav a").on("click", function() {
 })
 
 // $('[data-section="me"')
-

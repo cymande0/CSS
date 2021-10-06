@@ -1,7 +1,7 @@
 // JQuery:
 
 // function changeText() {
-//     const scrollPosition = $(document).scrollTop();
+//     
 //     console.log("Scroll Postion: " + scrollPosition);
 
 //     const section1Height = $(".sekcja1").height();
